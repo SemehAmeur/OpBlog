@@ -1,0 +1,25 @@
+/*Playground*/
+/*
+mobiles : 320-488px
+ipads/tablets: 481px -768px
+small screens / laptops: 769px -1024px
+Desktop/large screens: 1024px - 1200px
+tv/extra screens: 1201-9999999999px
+*/
+
+/*
+1-mobile first approach
+2- Desktop first approach
+*/
+/* Desktop */
+@media(min-width:768px){
+    /*
+        you can change any elemnt property using css
+    */
+    body{
+        background-color: red;
+    }
+    h1{
+        color: white;
+    }
+}
