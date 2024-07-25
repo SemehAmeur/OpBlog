@@ -1,25 +1,100 @@
-/*Playground*/
-/*
-mobiles : 320-488px
-ipads/tablets: 481px -768px
-small screens / laptops: 769px -1024px
-Desktop/large screens: 1024px - 1200px
-tv/extra screens: 1201-9999999999px
-*/
+/*defaul browser display*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Global settings*/
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    background-color: #f5f5f5;
+}
+p{
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1.5 rem;
+}
+/*navigation bar*/
+nav {
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+nav img{
+    width: 100px;
+    margin: 4px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 2px;
+}
+nav ul li{
+    padding:5px
+}
+nav ul li a{
+    text-decoration: none;
+}
+.create-post-btn{
+    background-color: #ff5a5f;
+    counter-reset: #fff;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
 
-/*
-1-mobile first approach
-2- Desktop first approach
-*/
-/* Desktop */
-@media(min-width:768px){
-    /*
-        you can change any elemnt property using css
-    */
-    body{
-        background-color: red;
+}
+/*header*/
+header{
+    display: flex;
+    min-height: 80vh;
+    background: url("../images/headerbg.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header-content{
+    text-align: center;
+    padding: 10px;
+}
+.header-content h1{
+    font-size: 5rem;
+    padding: 10px;
+    margin-top: 20px;
+    color: #14213d;
+}
+.header-content a{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*Mobile design*/
+@media(min-width: 675px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
     }
-    h1{
-        color: white;
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    nav ul li{
+        padding: 10px;
     }
 }
