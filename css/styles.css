@@ -69,13 +69,19 @@ header{
 }
 .header-content{
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+
+
 }
+
 .header-content h1{
     font-size: 5rem;
     padding: 10px;
     margin-top: 20px;
     color: #14213d;
+}
+.header-content p{
+    padding: 20px;
 }
 .header-content a{
     background-color: #fff;
@@ -158,6 +164,11 @@ footer p{
     font-size: 4.5rem;
     font-weight: bold;
     color: #ffbe0b;
+}
+nav div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 footer .contact{
     display: flex;
